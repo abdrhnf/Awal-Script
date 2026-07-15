@@ -37,7 +37,7 @@ def _load_local_config():
 
 _LOCAL_CONFIG = _load_local_config()
 SERVER_URL = _LOCAL_CONFIG.get("server_url", "http://100.93.212.20:8000")
-API_KEY = _LOCAL_CONFIG.get("api_key", "")
+API_KEY = _LOCAL_CONFIG.get("api_key", "local-secret-key")
 
 WEIGHT_PRESETS = [
     (100, "Thin",       0.295),
